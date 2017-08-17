@@ -1,10 +1,11 @@
 (function(){
 
-    var startingPopulation = 100;
+    var startingPopulation = 200;
     var birthRate = .1;
-    var numOfWeeks = 2;
-
-  for (i = 0; i < numOfWeeks; i++){
+    var numOfWeeks = 5;
+//runs for loop for amount of weeks to increment population
+//parseInt so that only whole numbers are displayed
+  for (let i = 0; i < numOfWeeks; i++){
 
     startingPopulation = parseInt(startingPopulation + (startingPopulation * birthRate));
   }
